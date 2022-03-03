@@ -5,15 +5,15 @@ public class CountDown {
 
         int first;
         int last;
+        CountDownVon(10);
 
-       int Result;
 
     }
 
-    public static int Result(int first, int last){
-         first = 10;
-         last =0;
-         while (first==last){
+    public static void CountDownVon(int first){
+
+         int last =0;
+         while (first!=0){
              System.out.println (first);
              first --;
 

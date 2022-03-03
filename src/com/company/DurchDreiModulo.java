@@ -4,7 +4,7 @@ public class DurchDreiModulo {
     public static void main(String[] args) {
      int a;
      int b= 3;
-      result=CheckIt(54);
+       CheckIt(54);
 
 
     }
