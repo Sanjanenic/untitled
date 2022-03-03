@@ -4,11 +4,11 @@ public class DurchDreiModulo {
     public static void main(String[] args) {
      int a;
      int b= 3;
-     String result=CheckIt(54);
+      result=CheckIt(54);
 
 
     }
-    public static String CheckIt (int a){
+    public static void CheckIt (int a){ //Ovdje sam nesto zeznula kucakla u krivom folderu
         int b =3;
         int result= a % b;
         if (result == 0){
@@ -17,6 +17,7 @@ public class DurchDreiModulo {
         else{
             System.out.println ("Zahl" + a + " ist nicht mit 3 teilbar!");
         }
+
     }
 
 }
