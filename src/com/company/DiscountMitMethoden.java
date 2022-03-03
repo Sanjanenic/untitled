@@ -1,6 +1,6 @@
 package com.company;
 
-public class Main {
+public class DiscountMitMethoden {
 
     public static void main(String[] args) {
         boolean isDog = false;
@@ -10,7 +10,6 @@ public class Main {
         double discount=getBus(ticketPrice,isDog,isSenior, isStudent );
 
         System.out.println("I seved: " + discount + " Euro für my " + ticketPrice + " ticket");
-
 
     }
 
