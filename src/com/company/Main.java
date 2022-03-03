@@ -3,26 +3,35 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
+        boolean isDog = false;
+        boolean isSenior= true;
+        boolean isStudent= true;
+        double ticketPrice= 2.5;
+        double discount=getBus(ticketPrice,isDog,isSenior, isStudent );
 
-       
-            int Fiction=1;
-            int NonFiction=2;
-            boolean discount;
-
-            if (NonFiction>2 && Fiction==0){
-                discount = true;
-                System.out.println("I have a discount");
-            }
-
-            else {
-                discount= false;
-                System.out.println("I have not a discount");
+        System.out.println("I seved: " + discount + " Euro für my " + ticketPrice + " ticket");
 
 
+    }
 
+    public static double getBus (double ticketPrice, boolean isDog,boolean isSenior, boolean isStudent ){
+        double discount;
 
+        if(isDog){
+            discount= ticketPrice * 0.2;
+        }
+        else if (isSenior){
+            discount=ticketPrice * 0.15;
+        }
+        else if (isStudent){
+            discount=ticketPrice * 0.1;
+        }
+        else{
+            discount=0;
         }
 
-        public static boolean
+        return  discount;
+
     }
 }
+
