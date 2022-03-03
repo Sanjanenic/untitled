@@ -9,7 +9,7 @@ public class Bucher {
 
         System.out.println(discountBooks);
     }
-    public static boolean discountBook(int fiction, int NonFiction){
+    public static boolean discountBook(int fiction, int nonFiction){
         boolean discount;
 
         if (nonFiction > 2 && fiction >= 1) {
